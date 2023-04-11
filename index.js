@@ -3,10 +3,9 @@ var numero = parseInt(prompt("escolha um numero: "));
 //i = indice
 var i = 1;
 
-while (i <= 20) {
+ do {
     document.write(numero + " x "+ i +" = " + (numero * i) + "<br>");
-    //isso é extremamente necessário, sem isso o browser trava;
-    //apartir do momento em que o trabalho de cima for concluido, 
-    //ele muda o valor da variavel i pra mais 1  
+    //usado quando eu preciso que meu codigo seja execultado ao menos uma vez
     i = i+1;
-}
+}while(i <= 20) 
+document.write("saiu do loop");
