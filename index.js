@@ -5,7 +5,7 @@
 // (2000 é bissexto).
 
 for(var a=1004; a<=2017; a++){
- if(a%4 === 0 && a%400 === 0 ){
+ if(a%4 === 0 || a%400 === 0 ){
     document.write(a + "<br>");
  }else{
     if(a%100 === 0){
