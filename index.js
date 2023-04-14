@@ -1,16 +1,15 @@
-// Para este exercício, mostre na tela todos os anos a partir de 1004 
-//até o ano 2017, pulando de quatro em quatro anos.
-// Por exemplo:
-// 1004
-// 1008
-//  1012
-// E assim por diante.
-// É como mostrar os anos bissextos, mas sem as 
-//regras para descobrir se um ano é bissexto ou não. 
-//(vamos imaginar que se o ano é múltiplo de quatro, ele é bissexto).
+// Para este exercicio aplique a lógica necessário para 
+//mostrar os anos que são realmente bissextos, 
+//respeitando a regra: Os anos bissextos são múltiplos de 4, 
+//não múltiplos de 100 (1900 não é bissexto) e múltiplos de 400
+// (2000 é bissexto).
 
 for(var a=1004; a<=2017; a++){
- if(a%4 === 0){
+ if(a%4 === 0 && a%400 === 0 ){
     document.write(a + "<br>");
+ }else{
+    if(a%100 === 0){
+    document.write("não é bisexto")
+    }
  }
 }
