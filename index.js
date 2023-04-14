@@ -1,11 +1,16 @@
+// Para este exercício, mostre na tela todos os anos a partir de 1004 
+//até o ano 2017, pulando de quatro em quatro anos.
+// Por exemplo:
+// 1004
+// 1008
+//  1012
+// E assim por diante.
+// É como mostrar os anos bissextos, mas sem as 
+//regras para descobrir se um ano é bissexto ou não. 
+//(vamos imaginar que se o ano é múltiplo de quatro, ele é bissexto).
 
-var numero = parseInt(prompt("escolha um numero: "));
-//i = indice
-var i = 1;
-
- do {
-    document.write(numero + " x "+ i +" = " + (numero * i) + "<br>");
-    //usado quando eu preciso que meu codigo seja execultado ao menos uma vez
-    i = i+1;
-}while(i <= 20) 
-document.write("saiu do loop");
+for(var a=1004; a<=2017; a++){
+ if(a%4 === 0){
+    document.write(a + "<br>");
+ }
+}
