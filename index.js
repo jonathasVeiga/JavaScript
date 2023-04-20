@@ -1,16 +1,21 @@
 
-//Criar a Função
+
 function mostrarTabuada(){
-    alert("mostrar Tabuada Chamada");
+    //perguntar o numero para o usuário
+
+    //converter o numero 
+
+    //criar uma variavel que serviré de indice
+
+    /*enquanto <= 1000
+      concatena na variavel menssagem*/
+
+    //mostra menssagem no output 
 }
-//OBRIGATORIO INVOCAR A FUNÇÃO
+
 mostrarTabuada();
 
-//criei uma variavel e referenciei ele no html com o ID output
 var output = document.querySelector('#output');
-//inserindo algo nesse elemento html pelo javascript 
 output.innerHTML='Texto inserido por javascript'
-//criando sring vazia
-var menssagem = "";
 
-output.innerHTML = menssagem;
+var menssagem = "";
