@@ -112,10 +112,3 @@ input[type="text"] {
     grid-area: btnDivisao;
 }
 
-#btnAdicao,
-#btnSubtracao,
-#btnMultiplicacao,
-#btnDivisao {
-    /* grid-column: 4/5; */
-}
-
