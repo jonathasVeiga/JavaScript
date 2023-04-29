@@ -18,3 +18,12 @@
 
 //var n1 = parseFloat(prompt("digite o primeiro numero para calcular: "));
 
+var numero = parseInt(document.querySelectorAll('btn'));
+var tela = document.querySelector("tela").value;
+
+switch(numero){
+    case numero = 1:
+        tela.innerHTML = numero;
+    break;
+
+}
