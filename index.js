@@ -16,14 +16,20 @@
 
 //mini calculadora 1.0
 
-//var n1 = parseFloat(prompt("digite o primeiro numero para calcular: "));
+var tela = document.querySelector("#tela");
+var numero = parseInt(prompt("Digite o numero a ser calculado: "));
 
-var numero = parseInt(document.querySelectorAll('btn'));
-var tela = document.querySelector("tela").value;
-
-switch(numero){
-    case numero = 1:
-        tela.innerHTML = numero;
-    break;
-
+function mostrarValor(){
+    tela.innerHTML = numero;
 }
+
+mostrarValor();//obrigatório invocar a função.EM ALGUM MOMENTO ELA DEVE SER CHAMADA 
+
+
+function soma(){
+    var numero2 = parseInt(prompt("Digite segundo numero a ser calculado: "));
+    var somar = numero +" + "+ numero2 +" = "+ (numero+numero2);
+    tela.innerHTML = somar;
+}
+    
+
