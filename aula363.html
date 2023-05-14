@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript</title>
+    <style>
+        body{
+            margin: 0 auto;
+            text-align: center;
+        }
+        button{
+            width: 100px;
+            height: 25px;
+            margin-top: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Lógica de programação com js</h1>
+        <!-- Aqui vc vai falar oque essa função vai armazenar -->
+        <button onclick="mostrar(largura,altura)">resultado</button>
+        <div id=tela></div>
+    </div>
+    <script>
+        /*exercicio de parametro
+            Pedir para o usuário digitar dois números que representam os lados de um retangulo, 
+            assim que a pagina é carregada
+            mostrar na tela a area total quando clicar em um botão;
+        */
+       var altura = parseFloat(prompt("digite a altura: "));
+       var largura = parseFloat(prompt("digite a largura: "));
+
+       /*não importa oque vc colocar no parametro, ele sempre armazena por exemplo
+        primeira pergunta, na primeira variavel e assim por diante.
+        dessa forma não importa a letra que vc coloca quando criar a função,
+        mas as quantidade de variaveis sempre tem que ser a mesma quantidade nos parametros*/
+       function mostrar(j, w){
+            var tela = document.querySelector("#tela");
+            tela.innerHTML = "Largura = "+ j +"<br>"+
+                             "Altura = "+ w + "<br> "+
+                             "Área = "+ j*w ;
+       }
+    </script>
+</body>
+
+</html>
