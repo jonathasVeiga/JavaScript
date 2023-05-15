@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>Escolha a operação a ser calculada:</h3><br>
+    <div id="operadores">
+        <button class="btn" id="btnAdicao" onclick="calcular('adicao')">+</button>
+        <button class="btn" id="btnSubtracao" onclick="calcular('subtracao')">-</button>
+        <button class="btn" id="btnMultiplicacao" onclick="calcular('multiplicacao')">X</button>
+        <button class="btn" id="btnDivisao" onclick="calcular('divisao')">/</button>
+    </div>
+    <div id="tela"></div>
+    <script>
+
+        var tela = document.querySelector("#tela");
+        var numero = parseInt(prompt("Digite o numero a ser calculado: "));
+
+        function mostrarValor() {
+            tela.innerHTML = numero;
+        }
+
+        mostrarValor();
+
+        function calcular(adicao, subtracao, multiplicacao, divisao) {
+            if ('adicao') {
+                var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
+                numero = numero + numero2;
+                mostrarValor();
+            } else {
+                if ('subtracao') {
+                    var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
+                    numero = numero - numero2;
+                    mostrarValor();
+                } else {
+                    if ('multiplicacao') {
+                        var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
+                        numero = numero * numero2;
+                        mostrarValor();
+                    } else {
+                        if ('divisao') {
+                            var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
+                            numero = numero / numero2;
+                            mostrarValor();
+                        } else {
+                            alert("digite um valor Válido!");
+                        }
+                    }
+                }
+            }
+        }
+
+
+    </script>
+</body>
+
+</html>
