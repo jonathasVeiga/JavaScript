@@ -11,10 +11,10 @@
 <body>
     <h3>Escolha a operação a ser calculada:</h3><br>
     <div id="operadores">
-        <button class="btn" id="btnAdicao" onclick="calcular('adicao')">+</button>
-        <button class="btn" id="btnSubtracao" onclick="calcular('subtracao')">-</button>
-        <button class="btn" id="btnMultiplicacao" onclick="calcular('multiplicacao')">X</button>
-        <button class="btn" id="btnDivisao" onclick="calcular('divisao')">/</button>
+        <button class="btn" id="btnAdicao" onclick="calcular('+')">+</button>
+        <button class="btn" id="btnSubtracao" onclick="calcular('-')">-</button>
+        <button class="btn" id="btnMultiplicacao" onclick="calcular('*')">X</button>
+        <button class="btn" id="btnDivisao" onclick="calcular('/')">/</button>
     </div>
     <div id="tela"></div>
     <script>
@@ -28,32 +28,24 @@
 
         mostrarValor();
 
-        function calcular(adicao, subtracao, multiplicacao, divisao) {
-            if ('adicao') {
-                var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
-                numero = numero + numero2;
-                mostrarValor();
-            } else {
-                if ('subtracao') {
-                    var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
-                    numero = numero - numero2;
-                    mostrarValor();
-                } else {
-                    if ('multiplicacao') {
-                        var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
-                        numero = numero * numero2;
-                        mostrarValor();
-                    } else {
-                        if ('divisao') {
-                            var numero2 = parseFloat(prompt("Digite o segundo numero a ser calculado: "));
-                            numero = numero / numero2;
-                            mostrarValor();
-                        } else {
-                            alert("digite um valor Válido!");
-                        }
-                    }
-                }
-            }
+
+        function calcular(operacao) {
+        var n2 = parseFloat(prompt("digite o segundo valor a ser calculado!"));
+
+           switch (operacao) {
+            case '+':
+                numero += n2;
+                break;
+            case '-':
+                numero -= n2;
+                break;
+            case '*':
+                numero *= n2;
+                break;
+            case '/':
+                numero /= n2;
+           }
+           mostrarValor();//Obrigatório invocar a função mostra valor dentro da dessa função;
         }
 
 
